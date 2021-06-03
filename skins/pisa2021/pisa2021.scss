@@ -1,0 +1,78 @@
+
+/**
+ * Шаблон для PISA-2021
+ * > npm run models-build --config=pisa2021
+ */
+
+// В левой половине на каждой сцене шрифт был один и тот же (не скакал)
+.courseml[skin="board"] {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+// Экран делился ровно поровну
+// В правой половине была всегда картинка. Одного размера, в одном положении
+// Все это замечательно отображалось в 1920*1080
+.courseml[skin="board"] #theory,
+.courseml[skin="board"] #wrapper {
+   width: 100%;
+   height: 100%;
+
+   .rightFigure,
+   #floatingimgmain {
+     margin-left: 50px;
+     width: 50%;
+     height: 100%;
+     border-left: 2px solid #A4A4A4;
+     td {
+       padding-left: 50px;
+       padding-right: 50px;
+       img {
+         height: auto;
+         width: 85%;
+       }
+     }
+     tr:first-child td {
+       padding-top: 50px;
+     }
+     tr:last-child td {
+       text-align: center;
+       padding-bottom: 50px;
+     }
+   }
+   &>p {
+    padding-top: 50px;
+    padding-left: 50px;
+   }
+ }
+
+.courseml[skin="board"] #wrapper {
+  #floatingimgmain #floatingimg {
+    width: 100%;
+    height: 100%;
+    table {
+      margin-top: 0 !important;
+      width: 100%;
+      height: 100%;
+      img {
+        // width: 100%;
+        height: auto;
+        width: 85%;
+      }
+    }
+  }
+  #questionmain {
+    width: 50%;
+    padding: 50px;
+  }
+  #activepanel {
+    width: 100% !important;
+  }
+  .variantwrapper {
+    width: 100% !important;
+  }
+}
+
+.btn {
+  height: 45px;
+}

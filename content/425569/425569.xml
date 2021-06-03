@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<page subtype="text" scrollable="false">
+<title>Микроскоп</title>
+<content>
+<tabs width="900" height="520">
+ <figure>
+ <caption>Модель</caption>
+ <asset>
+ <figure align="center">
+ <object type="commonmodel" border="0" width="900" height="520" file="425459/425459.js"/>
+ </figure>
+ </asset>
+ </figure>
+ <figure>
+ <caption>Текст</caption>
+ <asset>
+ <p>Текст</p>
+ </asset>
+ </figure>
+</tabs>
+</content>
+</page>

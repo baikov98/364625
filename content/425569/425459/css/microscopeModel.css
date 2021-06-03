@@ -1,0 +1,149 @@
+.microscopeModel .tick line,
+.microscopeModel .tick text,
+.microscopeModel .domain  {
+    opacity: 0;
+}
+
+.microscopeModel .italicText {
+    font-style: italic!important;
+}
+
+.microscopeModel sub  {
+    font-size: 14px!important;
+    padding-left: 4%;
+}
+
+.microscopeModel .greekText {
+    font-family: Georgia!important;
+}
+
+.microscopeModel .greekText + sub {
+    padding-left: 1%;
+}
+
+.microscopeModel .tick .grid-line  {
+    opacity: 1;
+}
+
+.microscopeModel .nLabel {
+    padding-left: 9px;
+}
+
+.microscopeModel .lambda {
+    padding-right: 2px;
+}
+
+.microscopeModel .animationMode .pane-content {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.microscopeModel .radiobutton-group {
+    font-size: 24px!important;
+}
+
+.microscopeModel .tuningAccuracy .pane-content {
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    overflow: hidden;
+}
+
+.microscopeModel .base-radiobutton {
+    padding-bottom: 2px;
+}
+
+.microscopeModel .microscopeParameters .row-view {
+    padding: 4px 2px!important;
+    width: 160px !important;
+}
+
+.microscopeModel .microscopeParameters .pane-content {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.microscopeModel .magnificationAndResolution .label-view {
+    padding: 10px 0px!important;
+}
+
+.microscopeModel .row-view .nInput {
+    width: 64px!important;
+}
+
+.microscopeModel .microscopeIncrease {
+    margin-left: 9px!important;
+}
+
+.microscopeModel .NAlabel {
+    margin-left: 0px!important;
+}
+
+
+/* элементы анимации микроскопа */
+.microscopeModel .animation {
+    background: white;
+}
+
+.microscopeModel .animationBackground {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/static.png');
+    background-size: cover;
+}
+.microscopeModel .animationImage {
+    position: relative;
+    top: 15px;
+    left: 78px;
+    width: 265px;
+    height: 265px;
+    background-image: url('../img/1leaf.png');
+    
+    background-size: 100% 100%;
+    background-position: center center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 200px 200px rgba(0, 144, 255, 0.05) inset;
+}
+
+
+.microscopeModel .animationFilter {
+    position: absolute;
+    top: 50px;
+    left: 78px;
+    width: 265px;
+    height: 265px;
+    background: red;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+
+.microscopeModel #objectIllustration {
+    width: 260px!important;
+    height: 150px;
+    background: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 50px;
+    left: 130px;
+}
+
+/* предзагрузка изображений */
+.microscopeModel::after{
+    position:absolute; 
+    width:0; height:0; overflow:hidden; z-index:-1;
+    content: url('../img/1leaf.png') url('../img/2leaf.png') url('../img/3leaf.png') 
+            url('../img/4leaf.png') url('../img/1cell.png') url('../img/2cell.png')
+            url('../img/3cell.png') url('../img/4cell.png') url('../img/5cell.png');
+ }
+
+.microscopeModel .axis path, .axis line {
+    fill: none;
+    stroke: #333;
+}
+.microscopeModel .axis .grid-line {
+    stroke: #000;
+    stroke-opacity: 0.2;
+}
+.microscopeModel .axis text {
+    font: 10px Verdana!important;
+}

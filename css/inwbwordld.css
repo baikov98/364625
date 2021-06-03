@@ -1,0 +1,652 @@
+@charset "UTF-8";
+.courseml[skin="IN_WB-World"] {
+  font-size: 20px;
+  line-height: 22px;
+  line-height: 1.4;
+  font-family: Verdana, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  background-size: 100%;
+  /* ------- ��� ������ sorting ------- */
+  /* --------------------------------- */
+  /* ------- ��� ������ Classification -------- */
+  /*.groupbar.classification .classgroupitem table{*/
+  /*	margin: 0;*/
+  /*}*/
+  /* -------------------------------------------- */
+  /* ---------- ��� ������ Matching -------------- */
+  /* --------------------------------------------- */
+  /* ------------ Singlechoice, Multichoice -------------- */
+  /* ------------------- dnd ----------------- */
+  /* ----------- ��� ������ Hotspot ------------*/
+  /* -------------------------------------------- */
+  /* ------- ��� ������ relating ------- */
+  /* --------------------------------- */
+  /* ----------------------- LEGEND ----------------------- */ }
+  .courseml[skin="IN_WB-World"].im-popup {
+    padding: 7px; }
+  .courseml[skin="IN_WB-World"] #dialog {
+    font-size: 20px;
+    line-height: 22px;
+    line-height: 1.4;
+    font-family: Verdana, sans-serif; }
+  .courseml[skin="IN_WB-World"] #theory .borderedimg {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #contents, .courseml[skin="IN_WB-World"] #journal, .courseml[skin="IN_WB-World"] #bookmarks {
+    position: relative; }
+  .courseml[skin="IN_WB-World"] input#answer {
+    border: 2px solid #5CC8CB !important;
+    border-radius: 6px !important;
+    padding: 0 5px 0 5px !important;
+    height: 30px;
+    line-height: 22px; }
+  .courseml[skin="IN_WB-World"] section {
+    background-image: none; }
+  .courseml[skin="IN_WB-World"] div.audio {
+    padding: 9px 3px 0 3px; }
+  .courseml[skin="IN_WB-World"] #wrapper .audio .android-audio {
+    position: relative !important;
+    bottom: 0px !important;
+    height: 42px !important; }
+  .courseml[skin="IN_WB-World"] #activepanel {
+    padding: 10px 0 10px 0;
+    padding-top: 0 !important;
+    position: relative; }
+  .courseml[skin="IN_WB-World"] #wrapper, .courseml[skin="IN_WB-World"] #theory {
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 0px !important;
+    position: relative; }
+  .courseml[skin="IN_WB-World"] .comment,
+  .courseml[skin="IN_WB-World"] .commentheader {
+    font-size: 20px;
+    line-height: 22px; }
+  .courseml[skin="IN_WB-World"] #conditions .panelBorder {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 2px solid #afd8da;
+    border-radius: 8px;
+    z-index: 10;
+    background: none;
+    pointer-events: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%; }
+  .courseml[skin="IN_WB-World"] #conditions {
+    position: relative;
+    background: url(../img/extract/conditions_back.png) center repeat-x;
+    background-size: auto 100%;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 4px 10px 7px 4px !important;
+    margin-top: 10px;
+    z-index: 10;
+    height: 100px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box; }
+  .courseml[skin="IN_WB-World"] #conditions img {
+    margin: 10px 0 10px 0; }
+  .courseml[skin="IN_WB-World"] #conditions p {
+    text-align: center;
+    vertical-align: middle; }
+  .courseml[skin="IN_WB-World"] #checkPanel {
+    height: 66px;
+    width: 980px;
+    position: absolute;
+    bottom: 0 !important;
+    padding: 0 !important;
+    z-index: 700;
+    pointer-events: none;
+    left: 50%;
+    margin-left: -490px; }
+  .courseml[skin="IN_WB-World"] #checkButtons {
+    position: absolute !important;
+    pointer-events: auto;
+    right: 8px !important;
+    bottom: 8px !important;
+    padding: 0 !important;
+    z-index: 10 !important; }
+  .courseml[skin="IN_WB-World"] #hintAligner {
+    z-index: 10 !important; }
+  .courseml[skin="IN_WB-World"] #endTestBtn {
+    position: absolute;
+    pointer-events: auto;
+    bottom: 8px !important;
+    border: 0;
+    width: 150px;
+    z-index: 710 !important; }
+  .courseml[skin="IN_WB-World"] #clock {
+    position: absolute;
+    pointer-events: auto;
+    bottom: 8px !important;
+    border: 0;
+    width: 100px;
+    left: 170px;
+    z-index: 710 !important; }
+  .courseml[skin="IN_WB-World"] #hintText {
+    color: black !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    height: auto !important;
+    z-index: 10 !important;
+    font-size: 20px;
+    line-height: 22px;
+    left: 0;
+    width: 100% !important; }
+  .courseml[skin="IN_WB-World"] .chkPanelBackground {
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+    .courseml[skin="IN_WB-World"] .chkPanelBackground[panel="correct"] {
+      background-image: url(../img/extract/correct_panel.png); }
+    .courseml[skin="IN_WB-World"] .chkPanelBackground[panel="answer"] {
+      background-image: url(../img/extract/answer_panel.png); }
+    .courseml[skin="IN_WB-World"] .chkPanelBackground[panel="wrong"] {
+      background-image: url(../img/extract/wrong_panel.png); }
+    .courseml[skin="IN_WB-World"] .chkPanelBackground[panel="condition"] {
+      background-image: url(../img/extract/condition_panel.png); }
+  .courseml[skin="IN_WB-World"] #turtle {
+    width: 180px;
+    height: 140px;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    background: none;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+    .courseml[skin="IN_WB-World"] #turtle[turtleback="normal"] {
+      background-image: url(../img/extract/turtle.png); }
+    .courseml[skin="IN_WB-World"] #turtle[turtleback="sad"] {
+      background-image: url(../img/extract/sad_turtle.png); }
+  .courseml[skin="IN_WB-World"] .btn {
+    height: 46px !important;
+    background: url(../img/extract/check_btn.png) center no-repeat;
+    background-size: 100% 100%;
+    border: 0; }
+    .courseml[skin="IN_WB-World"] .btn:hover {
+      background: url(../img/extract/check_btn.png) no-repeat;
+      background-size: 100% 100%;
+      border: 0; }
+    .courseml[skin="IN_WB-World"] .btn.mousedown {
+      background-image: url(../img/extract/check_btn_pressed.png); }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.sorting {
+    /*	height: 40px !important;*/
+    border: 2px solid #5CC8CB !important;
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+    background: #c5eceb;
+    position: relative;
+    padding: 2px; }
+  .courseml[skin="IN_WB-World"] .bar.sorting .innerBorder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #f2f3f8;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.sorting {
+    /*	height: 40px !important;*/
+    padding: 2px 20px 2px 20px !important;
+    border: 2px solid #5CC8CB !important;
+    background: #E8E5BA;
+    border-radius: 8px;
+    position: relative; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.sorting .innerBorder {
+    border: 2px solid #5CC8CB;
+    border-radius: 5px; }
+  .courseml[skin="IN_WB-World"] .varianttext img {
+    border: 6px solid transparent;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .varianttext img.borderedimg {
+    border: 6px solid #5CC8CB;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .bar.classification {
+    border: 2px solid #5CC8CB !important;
+    background: #E8E5BA;
+    border-radius: 8px;
+    line-height: 22px;
+    padding-bottom: 4px;
+    margin: 7px; }
+  .courseml[skin="IN_WB-World"] .bar.classification.withImages {
+    border: none !important;
+    background: transparent;
+    padding: 2px;
+    margin: 4px; }
+  .courseml[skin="IN_WB-World"] .bar.classification.withImages img {
+    border: 6px solid #5CC8CB;
+    border-radius: 8px;
+    box-sizing: border-box; }
+  .courseml[skin="IN_WB-World"] .groupbar.classification {
+    background: #c5eceb;
+    font-size: 20px;
+    line-height: 22px;
+    border: 2px solid #5CC8CB;
+    color: black !important;
+    border-radius: 8px;
+    position: relative;
+    padding: 6px 0 6px 0; }
+  .courseml[skin="IN_WB-World"] .groupbar.classification .innerBorder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #f2f3f8;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .groupbar.classification.withImages .innerBorder {
+    border: 2px solid #5CC8CB;
+    top: 4px; }
+  .courseml[skin="IN_WB-World"] .groupbar.classification.withImages {
+    background: none !important;
+    border: none !important; }
+  .courseml[skin="IN_WB-World"] .groupbar.classification .classgroupitem.withImages img {
+    border: 5px solid #5CC8CB;
+    border-radius: 8px;
+    border: 6px solid #dbebea;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .classitemitem .innerBorder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #5CC8CB;
+    border-radius: 5px; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching {
+    background: #c5eceb;
+    font-size: 20px;
+    line-height: 22px;
+    border: 2px solid #5CC8CB;
+    color: black !important;
+    border-radius: 8px;
+    position: relative;
+    padding: 6px 0; }
+  .courseml[skin="IN_WB-World"] .baractive {
+    margin: 5px; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching .innerBorder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #f2f3f8;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching .bartc {
+    text-align: center !important; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching.withImages {
+    border: none !important;
+    background: none;
+    padding: 0; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching.withImages img {
+    /*	border: 6px solid #dbebea;*/
+    /*	border-radius: 8px;*/ }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching.withImages .outerBorder {
+    border: 2px solid #5CC8CB;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    padding: 8px;
+    background: #dbebea; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.matching {
+    background: #E8E5BA;
+    font-size: 20px;
+    line-height: 22px;
+    border: 2px solid #5CC8CB;
+    color: black !important;
+    border-radius: 8px;
+    position: relative;
+    padding: 10px 0 10px 0; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.matching .innerBorder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #5CC8CB;
+    border-radius: 5px; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.matching.withImages {
+    border: none !important;
+    /*	background: none !important;*/
+    padding: 0; }
+  .courseml[skin="IN_WB-World"] .background-none {
+    background: none !important; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.matching img {
+    border: 5px solid #5CC8CB;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortitems li.wrongAnswer .bar.matching table tr:first-child td {
+    background-color: #fa9696 !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortitems li.wrongAnswer .bar.matching table img {
+    /*	border-color: red;*/ }
+  .courseml[skin="IN_WB-World"] #sortitems li.wrongAnswer .caption.visible .captionDiv {
+    background-color: #fa9696 !important; }
+  .courseml[skin="IN_WB-World"] #sortitems li.wrongAnswer .caption.visible .innerBorder {
+    /*	border-color: red !important;*/ }
+  .courseml[skin="IN_WB-World"] #sortitems li.wrongAnswer .bar.matching.withImages .bartc {
+    background-color: #fa9696 !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortitems li.rightAnswer .bar.matching table tr:first-child td {
+    background-color: #c8fac7 !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortitems li.rightAnswer .bar.matching table img {
+    /*	border-color: green;*/ }
+  .courseml[skin="IN_WB-World"] #sortitems li.rightAnswer .caption.visible .captionDiv {
+    background-color: #c8fac7 !important; }
+  .courseml[skin="IN_WB-World"] #sortitems li.rightAnswer .caption.visible .innerBorder {
+    /*	border-color: green !important;*/ }
+  .courseml[skin="IN_WB-World"] #sortitems li.rightAnswer .bar.matching.withImages .bartc {
+    background-color: #c8fac7 !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .variantwrapper.withoutImage {
+    padding: 4px;
+    box-sizing: border-box; }
+  .courseml[skin="IN_WB-World"] .varianttext {
+    position: relative; }
+  .courseml[skin="IN_WB-World"] .varianttext.withoutImage {
+    border: 4px solid #5CC8CB !important;
+    border-radius: 8px;
+    margin: 5px;
+    background: #DBEBEB;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px 4px 25px;
+    height: 80%; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage img.singlechoice.borderedimg,
+  .courseml[skin="IN_WB-World"] .varianttext.withImage img.multichoice.borderedimg {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .varianttext .variantchkbox {
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 3px solid #5CC8CB;
+    background: white;
+    position: absolute;
+    top: -10px;
+    left: -10px; }
+  .courseml[skin="IN_WB-World"] .varianttext .variantchkbox .marker {
+    width: 19px;
+    height: 19px;
+    margin: 5px auto 0;
+    position: relative;
+    display: none; }
+  .courseml[skin="IN_WB-World"] .varianttext.multichoice .variantchkbox {
+    border-radius: 10px; }
+  .courseml[skin="IN_WB-World"] .varianttext.multichoice .variantchkbox .marker {
+    background: #5CC8CB;
+    border-radius: 2px; }
+  .courseml[skin="IN_WB-World"] .varianttext.singlechoice .variantchkbox {
+    border-radius: 17px; }
+  .courseml[skin="IN_WB-World"] .varianttext.singlechoice .variantchkbox .marker {
+    background: url(../img/extract/bull_blue.png) 0 0 no-repeat;
+    border-radius: 9px; }
+  .courseml[skin="IN_WB-World"] .varianttext.checked .variantchkbox .marker {
+    display: block; }
+  .courseml[skin="IN_WB-World"] .varianttext.rightAnswer,
+  .courseml[skin="IN_WB-World"] .varianttext.rightAnswer .variantchkbox {
+    border-color: #27D921 !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.rightAnswer.multichoice .variantchkbox .marker {
+    display: block;
+    background: #27D921 !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.rightAnswer.singlechoice .variantchkbox .marker {
+    display: block;
+    background: url(../img/extract/bull_green.png) 0 0 no-repeat; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.rightAnswer img.singlechoice.borderedimg,
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.rightAnswer img.multichoice.borderedimg {
+    border: 5px solid #27D921 !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.wrongAnswer,
+  .courseml[skin="IN_WB-World"] .varianttext.wrongAnswer .variantchkbox {
+    border-color: #FF481A !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.wrongAnswer.multichoice .variantchkbox .marker {
+    display: block;
+    background: #FF481A !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.wrongAnswer.singlechoice .variantchkbox .marker {
+    display: block;
+    background: url(../img/extract/bull_red.png) 0 0 no-repeat; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.wrongAnswer img.singlechoice.borderedimg,
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.wrongAnswer img.multichoice.borderedimg {
+    border: 5px solid #FF481A !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage img.singlechoice,
+  .courseml[skin="IN_WB-World"] .varianttext.withImage img.multichoice {
+    border: 5px solid transparent !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar .caption {
+    border: none !important;
+    padding: 0 !important; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar .caption .innerBorder {
+    /*	border: none !important;*/
+    border: 2px solid #5CC8CB; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.rightAnswer .caption.visible .captionDiv,
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.rightAnswer .caption.visible .captionDiv {
+    background-color: #c8fac7 !important; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.wrongAnswer .caption.visible .captionDiv,
+  .courseml[skin="IN_WB-World"] .varianttext.withImage.wrongAnswer .caption.visible .captionDiv {
+    background-color: #fa9696 !important; }
+  .courseml[skin="IN_WB-World"] .caption {
+    font-size: 20px;
+    line-height: 22px;
+    position: relative; }
+  .courseml[skin="IN_WB-World"] .caption .innerBorder {
+    border: 2px solid #5CC8CB;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+  .courseml[skin="IN_WB-World"] .vWrap {
+    display: block; }
+  .courseml[skin="IN_WB-World"] .variantwrapper .comment {
+    display: table-footer-group; }
+  .courseml[skin="IN_WB-World"] #dnd.borderedimg {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #hotspot {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #hotspot .borderedimg {
+    border: 0 !important; }
+  .courseml[skin="IN_WB-World"] #topsolutionpanel.hotspot .borderedimg {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .hotspot.borderedimg img {
+    border-radius: 3px; }
+  .courseml[skin="IN_WB-World"] .hotspot .innerBorder {
+    border: 5px solid #f2f3f8;
+    border-radius: 5px; }
+  .courseml[skin="IN_WB-World"] .hotspot #hsppointer {
+    border: none !important; }
+  .courseml[skin="IN_WB-World"] #leftPanel {
+    border-radius: 12px; }
+  .courseml[skin="IN_WB-World"] #stringanswer .outerBorder {
+    border: 3px solid #dbebea;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.relating {
+    border: 2px solid #5CC8CB !important;
+    border-radius: 8px;
+    padding: 0 10px 0 10px;
+    background: #c5eceb;
+    position: relative;
+    padding: 2px;
+    margin: 2px; }
+  .courseml[skin="IN_WB-World"] .bar.relating .innerBorder {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #f2f3f8;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.relating {
+    border: 1px solid #5CC8CB !important;
+    background: #E8E5BA;
+    border-radius: 8px;
+    position: relative;
+    padding: 3px 0 3px 0;
+    margin: 2px; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.relating .innerBorder {
+    border: 2px solid #5CC8CB;
+    border-radius: 5px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist th {
+    background: #c5eceb;
+    font-size: 20px;
+    line-height: 22px;
+    color: black !important;
+    font-weight: 400; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist td {
+    background: #E8E5BA; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist tr:first-child td:first-child {
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist tr:first-child td:last-child {
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist tr:first-child th:first-child {
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist tr:first-child th:last-child {
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+  .courseml[skin="IN_WB-World"] #activepanel table.dropdownlist tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .courseml[skin="IN_WB-World"] .wrapper-dropdown {
+    background: none !important;
+    margin-bottom: 4px;
+    margin-right: 5px; }
+  .courseml[skin="IN_WB-World"] .wrapper-dropdown .dropdown {
+    margin-left: 2px;
+    overflow: visible; }
+  .courseml[skin="IN_WB-World"] .wrapper-dropdown div {
+    height: 24px;
+    line-height: 24px;
+    background: #ffffff;
+    border: 2px solid #5CC8CB;
+    border-radius: 5px;
+    margin-right: -3px;
+    padding: 5px 16px 5px 5px; }
+  .courseml[skin="IN_WB-World"] .wrapper-dropdown .dropdown li a {
+    padding-right: 16px; }
+  .courseml[skin="IN_WB-World"] #topsolutionpanel {
+    padding-top: 0px; }
+  .courseml[skin="IN_WB-World"] #topsolutionpanel.hotspot {
+    padding: 10px 0 10px 0;
+    padding-top: 0 !important;
+    margin-top: 10px; }
+  .courseml[skin="IN_WB-World"] #topsolutionpanel img.borderedimg {
+    border: 5px solid #5CC8CB !important;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #stringanswer #rightSolution {
+    display: table-cell;
+    vertical-align: middle; }
+  .courseml[skin="IN_WB-World"] #floatingimg {
+    margin-left: 20px;
+    margin-top: 2px;
+    padding: 0;
+    border: 5px solid #5CC8CB;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #floatingimg img {
+    border: none; }
+  .courseml[skin="IN_WB-World"] #floatingimg video {
+    margin-bottom: -6px; }
+  .courseml[skin="IN_WB-World"] video {
+    border: 5px solid #5CC8CB;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] .bar {
+    /*	box-sizing: border-box;*/ }
+  .courseml[skin="IN_WB-World"] #matchinglegend.borderedimg {
+    border: 5px solid #5CC8CB;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #legend {
+    border: 3px solid #5CC8CB !important;
+    background: #E8E5BA;
+    border-radius: 8px; }
+  .courseml[skin="IN_WB-World"] #legend input {
+    text-align: center;
+    font-size: 16px; }
+  .courseml[skin="IN_WB-World"] .border-separate {
+    border-collapse: separate !important; }
+  .courseml[skin="IN_WB-World"] .captionDiv {
+    border: 2px solid #5CC8CB;
+    border-radius: 8px;
+    position: relative;
+    margin: 4px 0;
+    padding-bottom: 1px;
+    background: #f2f3f8; }
+  .courseml[skin="IN_WB-World"] #slide-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; }
+  .courseml[skin="IN_WB-World"] .journal td {
+    font-size: 20px !important;
+    color: #588CC5; }
+  .courseml[skin="IN_WB-World"] .journal .sectnum, .courseml[skin="IN_WB-World"] .journal .paranum {
+    font-size: 20px !important; }
+  .courseml[skin="IN_WB-World"] .journal td.tddiagram {
+    font-size: 14px !important;
+    color: #000 !important; }
+  .courseml[skin="IN_WB-World"] #searchPanel {
+    z-index: 1200; }
+  .courseml[skin="IN_WB-World"] #searchResults {
+    font-size: 20px; }
+  .courseml[skin="IN_WB-World"] .searchlinks {
+    height: 58px; }
+  .courseml[skin="IN_WB-World"] #sortitems {
+    overflow: visible; }
+  .courseml[skin="IN_WB-World"] .loupe {
+    border: 0 !important; }
+  .courseml[skin="IN_WB-World"] #sortgroup .bar.matching.withImages .loupe {
+    right: 12px; }
+  .courseml[skin="IN_WB-World"] .varianttext.withImage .loupe, .courseml[skin="IN_WB-World"] .varianttext.withImage .loupe {
+    right: 6px;
+    top: 6px; }
+  .courseml[skin="IN_WB-World"] .bar.classification.withImages .loupe {
+    right: 7px;
+    top: 7px; }
+  .courseml[skin="IN_WB-World"] #sortitems .bar.matching .loupe {
+    right: 2px;
+    top: 6px; }
+  .courseml[skin="IN_WB-World"][scenebackground] {
+    background-position: center;
+    background-repeat: no-repeat; }
+  .courseml[skin="IN_WB-World"][scenebackground="0"] {
+    background-image: url(../img/extract/0.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="1"] {
+    background-image: url(../img/extract/1.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="2"] {
+    background-image: url(../img/extract/2.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="3"] {
+    background-image: url(../img/extract/3.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="4"] {
+    background-image: url(../img/extract/4.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="5"] {
+    background-image: url(../img/extract/5.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="6"] {
+    background-image: url(../img/extract/6.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="7"] {
+    background-image: url(../img/extract/7.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="8"] {
+    background-image: url(../img/extract/8.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="9"] {
+    background-image: url(../img/extract/9.jpg); }
+  .courseml[skin="IN_WB-World"][scenebackground="10"] {
+    background-image: url(../img/extract/10.jpg); }
+
